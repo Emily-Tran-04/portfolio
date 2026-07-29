@@ -8879,8 +8879,48 @@ textarea.form-control {
   .year-mobile {
     display: block; } }
     
-/* added css to override for about.html education section */
+/* added css to override for index.html minutes counter */
+.counter-wrap .block-18 .text .number {
+  display: block;
+  font-size: clamp(2rem, 6vw, 4.5rem);
+  line-height: 1.1;
+  overflow-wrap: anywhere;
+}
 
+.counter-wrap .block-18 {
+  overflow: hidden;
+}
+
+.minutes-counter .ftco-label {
+  display: block;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .minutes-counter .ftco-label {
+    max-width: 9ch;
+    white-space: normal;
+    line-height: 1.4;
+  }
+}
+
+/* added css to override for about.html resume link */
+.about-desc,
+.about-desc .p-5,
+.about-desc a {
+  position: relative;
+  z-index: 5;
+}
+
+.bold-text {
+  pointer-events: none;
+}
+
+.author-img::before,
+.author-img::after {
+  pointer-events: none;
+}
+
+/* added css to override for about.html education section */
 .exp-wrap .desc .subdetail {
   margin-bottom: 0.35rem;
   color: #8c8c8c;
@@ -8893,7 +8933,6 @@ textarea.form-control {
 }
 
 /* added css to override for about.html skills section */
-
 .skills-section .col-md-10,
 .skills-section .col-lg-9 {
   width: 100%;
