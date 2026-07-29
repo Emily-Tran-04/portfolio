@@ -8783,3 +8783,141 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+    
+/* added css to override for about.html welcome section */
+
+.welcome-content {
+  padding: 2rem 1.5rem !important;
+}
+
+@media (min-width: 992px) {
+  .welcome-content {
+    padding: 3rem 2rem !important;
+  }
+}
+
+/* added css to override for about.html profile and image distance */
+.profile-row {
+    margin-top: 5rem !important; }
+
+.about-section .author-img {
+    margin-bottom: 1.5rem; }
+    
+/* added css to override for about.html experience section */
+
+.exp-wrap {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 116px;
+  column-gap: 10px;
+  align-items: start;
+}
+
+.exp-wrap .desc,
+.exp-wrap .year {
+  float: none;
+  width: auto;
+}
+
+.exp-wrap .desc {
+  min-width: 0;
+}
+
+.exp-wrap .year {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.exp-wrap .year p {
+  margin-bottom: 0;
+}
+
+.exp-wrap .desc h4 .employer {
+  display: block;
+  color: #8c8c8c;
+  font-weight: 300;
+  margin-top: 0.15rem;
+}
+
+.exp-wrap .desc .location {
+  margin-bottom: 0.5rem;
+}
+
+.exp-wrap .desc .achievement-list {
+  padding-left: 1.1rem;
+}
+
+.exp-wrap .desc .achievement-list li {
+  margin-bottom: 0.35rem;
+  color: #8c8c8c;
+}
+
+.exp-wrap .desc .achievement-list li:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 767.98px) {
+  .exp-wrap {
+    grid-template-columns: 1fr;
+    row-gap: 6px;
+  }
+
+  .exp-wrap .year {
+    text-align: left;
+    white-space: normal;
+    order: 0;
+  }
+}
+    
+.year-mobile {
+  display: none;
+  margin-bottom: 0.2rem; }
+
+@media (max-width: 767.98px) {
+  .year-desktop {
+    display: none; }
+
+  .year-mobile {
+    display: block; } }
+    
+/* added css to override for about.html education section */
+
+.exp-wrap .desc .subdetail {
+  margin-bottom: 0.35rem;
+  color: #8c8c8c;
+}
+
+.exp-wrap .desc h5.section-label {
+  margin-top: 0.35rem;
+  margin-bottom: 0.35rem;
+  color: #ccc;
+}
+
+/* added css to override for about.html skills section */
+
+.skills-section .col-md-10,
+.skills-section .col-lg-9 {
+  width: 100%;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 2.5rem;
+  row-gap: 1.25rem;
+  width: 100%;
+}
+
+.skills-grid .animate-box,
+.skills-grid .progress-wrap {
+  width: 100%;
+  max-width: none;
+  margin-bottom: 0;
+}
+
+@media (max-width: 767.98px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+    column-gap: 0rem;
+  }
+}
